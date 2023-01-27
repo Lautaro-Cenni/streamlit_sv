@@ -7,9 +7,9 @@ from sklearn.preprocessing import LabelEncoder
 from scipy.sparse import csr_matrix
 le = LabelEncoder()
 
-df_show =  pd.read_csv('../datasets_streamlit/df_show.csv')
-df =  pd.read_csv('../datasets_streamlit/df.csv')
-df_test =  pd.read_csv('../datasets_streamlit/df_test.csv')
+df_show =  pd.read_csv('./datasets_streamlit/df_show.csv')
+df =  pd.read_csv('./datasets_streamlit/df.csv')
+df_test =  pd.read_csv('./datasets_streamlit/df_test.csv')
 
 N = df['customer_le'].unique().shape[0]
 M = df['product_le'].unique().shape[0]
